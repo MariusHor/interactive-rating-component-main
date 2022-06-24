@@ -1,0 +1,69 @@
+
+
+// Setting the box sizing to border-box in order to become easier to deal 
+//with box sizes. We also reset both margin and padding to 0.
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+// Removing list styles on ul, ol elements with a list role, which suggests
+// default styling will be removed
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+// Setting core root defaults
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+// Setting core body defaults
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.4;
+}
+
+// A elements that don't have a class get default styles 
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+// Make images easier to work with 
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+// Inherit fonts for inputs and buttons 
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+// Remove all animations, transitions and smooth scroll for people that 
+//prefer not to see them 
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

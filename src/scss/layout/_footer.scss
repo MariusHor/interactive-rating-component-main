@@ -1,0 +1,43 @@
+.footer {
+    position: sticky;
+    top: 100vh;
+    width: 100%;
+    padding: 1rem;
+    border-top: solid 1px #cacacd;
+    text-align: center; 
+    background: $neutral-dark-blue;
+    color: $neutral-white;
+
+    .footer__link {
+        color: yellow;
+        font-weight: $fw-secondary;
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .footer__link::after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 2px;
+        background-color: yellowgreen;
+        left: 0;
+        bottom: 0;
+    }
+    
+    .footer__link:hover::after {
+        width: 100%;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .footer__link:hover {
+        color: yellowgreen;
+    }
+    
+    .footer__link:focus-visible,
+    .footer__link:focus {
+        outline-offset: 0.0625rem;
+        outline: 0.15rem dotted $neutral-white;
+    }
+}
