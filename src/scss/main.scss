@@ -1,10 +1,6 @@
-@import "abstracts/variables";
+@use './abstracts';
+@use './base';
+@use './components';
+@use './layout';
+@use './vendors'
 
-@import "base/reset";
-@import "base/typography";
-
-@import "components/buttons";
-
-@import "layout/card";
-@import "layout/grid";
-@import "layout/footer"

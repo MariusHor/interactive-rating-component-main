@@ -68,14 +68,17 @@ body {
   background: hsl(213deg, 19%, 18%);
   color: hsl(0deg, 0%, 100%);
 }
-.footer .footer__link {
+.footer__link {
   color: yellow;
   font-weight: 700;
   text-decoration: none;
   position: relative;
   display: inline-block;
 }
-.footer .footer__link::after {
+.footer__link:hover {
+  color: yellowgreen;
+}
+.footer__link::after {
   position: absolute;
   content: "";
   width: 0;
@@ -84,15 +87,11 @@ body {
   left: 0;
   bottom: 0;
 }
-.footer .footer__link:hover::after {
+.footer__link:hover::after {
   width: 100%;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-.footer .footer__link:hover {
-  color: yellowgreen;
-}
-.footer .footer__link:focus-visible,
-.footer .footer__link:focus {
+.footer__link:focus-visible, .footer__link:focus {
   outline-offset: 0.0625rem;
   outline: 0.15rem dotted hsl(0deg, 0%, 100%);
 }

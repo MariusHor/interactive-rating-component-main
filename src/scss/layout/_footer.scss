@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .footer {
     position: sticky;
     top: 100vh;
@@ -8,15 +10,19 @@
     background: $neutral-dark-blue;
     color: $neutral-white;
 
-    .footer__link {
+    &__link {
         color: yellow;
         font-weight: $fw-secondary;
         text-decoration: none;
         position: relative;
         display: inline-block;
     }
-    
-    .footer__link::after {
+        
+    &__link:hover {
+        color: yellowgreen;
+    }
+
+    &__link::after {
         position: absolute;
         content: '';
         width: 0;
@@ -26,18 +32,14 @@
         bottom: 0;
     }
     
-    .footer__link:hover::after {
+    &__link:hover::after {
         width: 100%;
-        transition: 0.3s ease-in-out;
+        transition: 0.5s ease-in-out;
     }
     
-    .footer__link:hover {
-        color: yellowgreen;
-    }
-    
-    .footer__link:focus-visible,
-    .footer__link:focus {
+    &__link:focus-visible,
+    &__link:focus {
         outline-offset: 0.0625rem;
-        outline: 0.15rem dotted $neutral-white;
+        outline: 0.15rem dotted $clr-link-outline;
     }
 }
