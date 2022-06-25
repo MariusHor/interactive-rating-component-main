@@ -19,18 +19,31 @@
       <h1 class="card__title">How did we do?</h1>
       <p class="card__text">Please let us know how we did with your support request. All feedback is appreciated 
         to help us improve our offering!</p>
-      <div class="card__ratings">
-        <div class="card__rating">1</div>
-        <div class="card__rating">2</div>
-        <div class="card__rating">3</div>
-        <div class="card__rating">4</div>
-        <div class="card__rating">5</div>
-      </div>
-      <button class="button-submit">SUBMIT</button>
+        <form action="#" id="ratings-form" class="ratings" method="post">
+          <input class="ratings__value" type="radio" name="rating-button" id="one-star">
+          <label class="for-ratings__value" for="one-star">
+            <span data-hover="1">1</span>
+          </label>
+          <input class="ratings__value" type="radio" name="rating-button" id="two-stars">
+          <label class="for-ratings__value" for="two-stars">
+            <span data-hover="2">2</span>
+          </label>
+          <input class="ratings__value" type="radio" name="rating-button" id="three-stars">
+          <label class="for-ratings__value" for="three-stars">
+            <span data-hover="3">3</span>
+          </label>
+          <input class="ratings__value" type="radio" name="rating-button" id="four-stars">
+          <label class="for-ratings__value" for="four-stars">
+            <span data-hover="4">4</span>
+          </label>
+          <input class="ratings__value" type="radio" name="rating-button" id="five-stars">
+          <label class="for-ratings__value" for="five-stars">
+            <span data-hover="5">5</span>
+          </label>
+        </form>    
+      <button type="submit" form="ratings-form" class="button">SUBMIT</button>
     </div>
-    <div class="card card--alternate">
-  
-    </div>
+
   </main>
   <footer class="footer">
     <p class="footer__attribution">
@@ -53,12 +66,12 @@
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
+  <!--You selected  Add rating here  out of 5
 
   Thank you!
 
   We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+  don’t hesitate to get in touch!-->
 
   <!-- Thank you state end -->
 

@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+body {
+	display: grid;
+    align-content: center;
+    background: $neutral-darker-blue;
+    main {
+        justify-self: center;
+    }
+}

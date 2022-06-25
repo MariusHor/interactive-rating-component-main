@@ -10,8 +10,11 @@ $clr-link-outline: hsl(0, 0%, 100%);
 
 //TYPOGRAPHY
 
-$fs-body: 0.9375rem;
+$fs-body: 0.875rem;
 $ff-primary: 'Overpass', sans-serif;
 $fw-primary: 400;
 $fw-secondary: 700;
 
+//BREAKPOINTS
+
+$layout-breakpoint-desktop: 75em;

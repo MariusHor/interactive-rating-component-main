@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+
+.button {
+    background-color: $primary-orange;
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    color: $neutral-white;
+    font-weight: $fw-secondary;
+    border-radius: 5rem;
+    padding: 0.7rem;
+    margin-top: 1.3rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: $neutral-white;
+    color: $primary-orange;
+    transition: all 300ms linear; 
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+@media (min-width: $layout-breakpoint-desktop) {
+    .button {
+        margin-top: 2rem;
+    }
+}

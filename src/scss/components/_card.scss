@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+.card {
+    background: linear-gradient($neutral-dark-blue, hsl(215, 20%, 12%)) ;
+    margin: 0 1.5rem;
+    padding: 1.5rem 1.5rem 2rem;
+    border-radius: 1rem;
+    max-width: 25.75rem;
+
+    &__logo-container {
+        width: 40px;
+        height: 40px;
+        padding: 0.8rem;
+        background-color: rgb(52 59 66);
+        border-radius: 50%;
+    }
+}
+
+@media (min-width: $layout-breakpoint-desktop) {
+    .card {
+        padding: 2rem;
+        &__logo-container {
+            width: 48px;
+            height: 48px;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+}
