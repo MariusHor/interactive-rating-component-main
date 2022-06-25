@@ -20,7 +20,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 a:not([class]) {
@@ -60,20 +60,26 @@ body {
 }
 body .card__text {
   color: hsl(217deg, 12%, 63%);
-  margin-top: 0.5rem;
+  margin-top: 0.48rem;
 }
 body .card__title {
   font-size: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 0.9rem;
 }
 
 @media (min-width: 75em) {
-  body, span {
+  body {
     font-size: 0.9375rem;
   }
-  body .card__title, span .card__title {
+  body .card__title {
     font-size: 1.7rem;
-    margin-top: 2rem;
+    margin-top: 1.8rem;
+  }
+  body .card__text {
+    margin-top: 0.35rem;
+  }
+  body span {
+    font-size: 0.9375rem;
   }
 }
 .card {
@@ -94,6 +100,7 @@ body .card__title {
 @media (min-width: 75em) {
   .card {
     padding: 2rem;
+    border-radius: 1.7rem;
   }
   .card__logo-container {
     width: 48px;
@@ -103,10 +110,9 @@ body .card__title {
     align-content: center;
   }
 }
-.button {
+.submit-btn {
   background-color: hsl(25deg, 97%, 53%);
   width: 100%;
-  margin-top: 1rem;
   border: none;
   color: hsl(0deg, 0%, 100%);
   font-weight: 700;
@@ -115,21 +121,23 @@ body .card__title {
   margin-top: 1.3rem;
   letter-spacing: 2px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
-.button:hover {
+.submit-btn:hover {
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(25deg, 97%, 53%);
   transition: all 300ms linear;
 }
 
-.button:active {
+.submit-btn:active {
   transform: scale(0.95);
 }
 
 @media (min-width: 75em) {
-  .button {
-    margin-top: 2rem;
+  .submit-btn {
+    margin-top: 1.8rem;
+    padding: 0.65rem;
   }
 }
 [type=radio]:checked,
@@ -144,7 +152,8 @@ body .card__title {
 .ratings {
   display: flex;
   justify-content: space-between;
-  margin-top: 1.9rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.2rem;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
@@ -189,6 +198,9 @@ body .card__title {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.ratings .for-ratings__value span {
+  transform: translateY(10%);
 }
 
 @media (min-width: 75em) {

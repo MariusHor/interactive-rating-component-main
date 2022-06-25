@@ -19,6 +19,7 @@
 @media (min-width: $layout-breakpoint-desktop) {
     .card {
         padding: 2rem;
+        border-radius: 1.7rem;
         &__logo-container {
             width: 48px;
             height: 48px;

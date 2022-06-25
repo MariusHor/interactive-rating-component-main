@@ -1,9 +1,8 @@
 @use '../abstracts' as *;
 
-.button {
+.submit-btn {
     background-color: $primary-orange;
     width: 100%;
-    margin-top: 1rem;
     border: none;
     color: $neutral-white;
     font-weight: $fw-secondary;
@@ -12,20 +11,22 @@
     margin-top: 1.3rem;
     letter-spacing: 2px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
-.button:hover {
+.submit-btn:hover {
     background-color: $neutral-white;
     color: $primary-orange;
     transition: all 300ms linear; 
 }
 
-.button:active {
+.submit-btn:active {
     transform: scale(0.95);
 }
 
 @media (min-width: $layout-breakpoint-desktop) {
-    .button {
-        margin-top: 2rem;
+    .submit-btn {
+        margin-top: 1.8rem;
+        padding: 0.65rem;
     }
 }

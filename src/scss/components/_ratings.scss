@@ -12,7 +12,8 @@
 .ratings {
     display: flex;
     justify-content: space-between;
-    margin-top: 1.9rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.2rem;
     flex-wrap: wrap;
     gap: 0.5rem;
 
@@ -65,6 +66,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        span {
+            transform: translateY(10%);
+        }
     }
 }
 
