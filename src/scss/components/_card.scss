@@ -15,10 +15,6 @@
         border-radius: 50%;
     }
 
-    .hide {
-        display: none;
-    }
-
     &__second-state {
         display: flex;
         flex-direction: column;
@@ -34,12 +30,17 @@
             margin-top: 2rem;
         }
     }
+
+    .hide {
+        display: none;
+    }
 }
 
 @media (min-width: $layout-breakpoint-desktop) {
     .card {
         padding: 2rem;
         border-radius: 1.7rem;
+        
         &__logo-container {
             width: 48px;
             height: 48px;

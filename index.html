@@ -17,14 +17,14 @@
     <div class="card">
 
       <!-- Rating state start -->
-      <div class="card__first-state hide">
+      <div class="card__first-state">
         <div class="card__logo-container">
           <img src="/img/icon-star.svg" alt="" class="card__logo">
         </div>
         <h1 class="card__title">How did we do?</h1>
         <p class="card__text">Please let us know how we did with your support request. All feedback is appreciated 
           to help us improve our offering!</p>
-        <form action="#" id="ratings-form" class="ratings" method="post">
+        <form id="ratings-form" class="ratings" method="post">
           <input class="ratings__value" type="radio" name="rating-button" id="one-star">
           <label class="for-ratings__value" for="one-star">
             <span data-hover="1">1</span>
@@ -46,12 +46,12 @@
             <span data-hover="5">5</span>
           </label>
         </form>    
-        <button type="submit" form="ratings-form" class="submit-btn">submit</button>
+        <button type="submit" class="submit-btn">submit</button>
       </div>
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
-      <div class="card__second-state">
+      <div class="card__second-state hide">
         <img src="./img/illustration-thank-you.svg" alt="">
         <div class="card__rating">
           <p>You selected <span class="card__user-rating">4</span> out of 5</p>
@@ -75,5 +75,6 @@
     </p>
   </footer>
   <!-- FOOTER END -->
+  <script src="./src/js/main.js"></script>
 </body>
 </html>

@@ -12,16 +12,17 @@
     letter-spacing: 2px;
     cursor: pointer;
     text-transform: uppercase;
-}
 
-.submit-btn:hover {
-    background-color: $neutral-white;
-    color: $primary-orange;
-    transition: all 300ms linear; 
-}
-
-.submit-btn:active {
-    transform: scale(0.95);
+    &:hover {
+        background-color: $neutral-white;
+        color: $primary-orange;
+        transition: all 300ms linear; 
+    }
+    
+    &:active {
+        transform: scale(0.95);
+    }
+    
 }
 
 @media (min-width: $layout-breakpoint-desktop) {
