@@ -71,12 +71,12 @@ body .card__title {
   body {
     font-size: 0.9375rem;
   }
+  body .card__text {
+    margin-top: 0.35rem;
+  }
   body .card__title {
     font-size: 1.7rem;
     margin-top: 1.8rem;
-  }
-  body .card__text {
-    margin-top: 0.35rem;
   }
   body span {
     font-size: 0.9375rem;
@@ -84,7 +84,7 @@ body .card__title {
 }
 .card {
   background: linear-gradient(hsl(213deg, 19%, 18%), hsl(215deg, 20%, 12%));
-  margin: 0 1.5rem;
+  margin: 1.5rem;
   padding: 1.5rem 1.5rem 2rem;
   border-radius: 1rem;
   max-width: 25.75rem;
@@ -172,11 +172,9 @@ body .card__title {
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-.ratings .ratings__value {
-  flex: 50%;
-}
-.ratings .ratings__value:checked + label,
-.ratings .ratings__value:not(:checked) + label {
+.ratings__value {
+  background-color: rgb(52, 59, 66);
+  color: hsl(216deg, 12%, 54%);
   height: 42px;
   width: 42px;
   font-size: 0.875rem;
@@ -186,43 +184,28 @@ body .card__title {
   overflow: hidden;
   cursor: pointer;
   transition: all 300ms linear;
-}
-.ratings .ratings__value:checked + label {
-  color: hsl(0deg, 0%, 100%);
-}
-.ratings .ratings__value:not(:checked) + label {
-  color: hsl(216deg, 12%, 54%);
-}
-.ratings .ratings__value:checked + label:hover,
-.ratings .ratings__value:not(:checked) + label:hover {
-  background-color: hsl(25deg, 97%, 53%);
-  color: hsl(0deg, 0%, 100%);
-}
-.ratings .ratings__value:not(:checked) + label {
-  background-color: rgb(52, 59, 66);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.7);
-}
-.ratings .ratings__value:checked + label {
-  background-color: hsl(216deg, 12%, 54%);
-  box-shadow: 0 8px 10px 0 rgb(0, 0, 0);
-}
-.ratings .ratings__value:not(:checked) + label:hover {
-  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.7);
-}
-.ratings .for-ratings__value {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 8px 5px 0 rgba(0, 0, 0, 0.2);
 }
-.ratings .for-ratings__value span {
+.ratings__value span {
   transform: translateY(10%);
+}
+.ratings__value:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.7);
+}
+.ratings .active {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(216deg, 12%, 54%);
 }
 
 @media (min-width: 62em) {
-  .ratings__value:checked + label,
-.ratings__value:not(:checked) + label {
-    height: 51px !important;
-    width: 51px !important;
+  .ratings__value {
+    height: 51px;
+    width: 51px;
   }
 }
 body {

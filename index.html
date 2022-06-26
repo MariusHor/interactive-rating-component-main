@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-  <title>Frontend Mentor | Interactive rating component</title>
-  <link rel="stylesheet" href="./src/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- MAIN -->
-  <main>
-  <!-- CARD -->
-    <div class="card">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- MAIN -->
+    <main>
+      <!-- CARD -->
+      <div class="card">
 
-      <!-- Rating state start -->
-      <div class="card__first-state">
-        <div class="card__logo-container">
-          <img src="./img/icon-star.svg" alt="" class="card__logo">
+        <!-- Rating state start -->
+        <div class="card__first-state">
+          <div class="card__logo-container">
+            <img src="./img/icon-star.svg" alt="" class="card__logo">
+          </div>
+          <h1 class="card__title">How did we do?</h1>
+          <p class="card__text">Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!</p>
+          <form id="ratings-form" class="ratings" method="post">
+            <input type="radio" name="rating-button" id="one-star">
+            <label class="ratings__value" for="one-star">
+              <span data-hover="1">1</span>
+            </label>
+            <input type="radio" name="rating-button" id="two-stars">
+            <label class="ratings__value" for="two-stars">
+              <span data-hover="2">2</span>
+            </label>
+            <input type="radio" name="rating-button" id="three-stars">
+            <label class="ratings__value" for="three-stars">
+              <span data-hover="3">3</span>
+            </label>
+            <input type="radio" name="rating-button" id="four-stars">
+            <label class="ratings__value" for="four-stars">
+              <span data-hover="4">4</span>
+            </label>
+            <input type="radio" name="rating-button" id="five-stars">
+            <label class="ratings__value" for="five-stars">
+              <span data-hover="5">5</span>
+            </label>
+          </form>    
+          <button type="submit" class="submit-btn">submit</button>
         </div>
-        <h1 class="card__title">How did we do?</h1>
-        <p class="card__text">Please let us know how we did with your support request. All feedback is appreciated 
-          to help us improve our offering!</p>
-        <form id="ratings-form" class="ratings" method="post">
-          <input class="ratings__value" type="radio" name="rating-button" id="one-star">
-          <label class="for-ratings__value" for="one-star">
-            <span data-hover="1">1</span>
-          </label>
-          <input class="ratings__value" type="radio" name="rating-button" id="two-stars">
-          <label class="for-ratings__value" for="two-stars">
-            <span data-hover="2">2</span>
-          </label>
-          <input class="ratings__value" type="radio" name="rating-button" id="three-stars">
-          <label class="for-ratings__value" for="three-stars">
-            <span data-hover="3">3</span>
-          </label>
-          <input class="ratings__value" type="radio" name="rating-button" id="four-stars">
-          <label class="for-ratings__value" for="four-stars">
-            <span data-hover="4">4</span>
-          </label>
-          <input class="ratings__value" type="radio" name="rating-button" id="five-stars">
-          <label class="for-ratings__value" for="five-stars">
-            <span data-hover="5">5</span>
-          </label>
-        </form>    
-        <button type="submit" class="submit-btn">submit</button>
-      </div>
-      <!-- Rating state end -->
+        <!-- Rating state end -->
 
-      <!-- Thank you state start -->
-      <div class="card__second-state hide">
-        <img src="./img/illustration-thank-you.svg" alt="">
-        <div class="card__rating">
-          <p>You selected <span class="card__user-rating">4</span> out of 5</p>
+        <!-- Thank you state start -->
+        <div class="card__second-state hide">
+          <img src="./img/illustration-thank-you.svg" alt="">
+          <div class="card__rating">
+            <p>You selected <span class="card__user-rating">4</span> out of 5</p>
+          </div>
+          <h2 class="card__title">Thank you!</h2>
+          <p class="card__text">We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!</p>
         </div>
-        <h2 class="card__title">Thank you!</h2>
-        <p class="card__text">We appreciate you taking the time to give a rating. If you ever need more support, 
-          don’t hesitate to get in touch!</p>
+        <!-- Thank you state end -->
+
       </div>
-      <!-- Thank you state end -->
+      <!-- CARD END -->
+    </main>
+    <!-- MAIN END -->
 
-    </div>
-  <!-- CARD END -->
-  </main>
-  <!-- MAIN END -->
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p class="footer__attribution">
-      Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a class="footer__link" href="https://www.frontendmentor.io/profile/MariusHor">MariusHor</a>.
-    </p>
-  </footer>
-  <!-- FOOTER END -->
-  <script src="./src/js/main.js"></script>
-</body>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="footer__attribution">
+        Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a class="footer__link" href="https://www.frontendmentor.io/profile/MariusHor">MariusHor</a>.
+      </p>
+    </footer>
+    <!-- FOOTER END -->
+    <script src="./src/js/main.js"></script>
+  </body>
 </html>

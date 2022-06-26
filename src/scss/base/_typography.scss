@@ -18,12 +18,13 @@ body {
 @media (min-width: $layout-breakpoint-desktop) {
     body {
         font-size: 0.9375rem;
+
+        .card__text {
+            margin-top: 0.35rem;
+        }
         .card__title {
             font-size: 1.7rem;
             margin-top: 1.8rem;
-        }
-        .card__text {
-            margin-top: 0.35rem;
         }
         span {
             font-size: 0.9375rem;
